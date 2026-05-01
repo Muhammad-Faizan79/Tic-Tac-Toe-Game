@@ -150,7 +150,7 @@ body{
     display: none;
 }
 @media(max-width:786px){
-    .btn{
+    .g_btn,.hg_btn, .btn{
         width: 14vmin;
         height: 14vmin;
     }
