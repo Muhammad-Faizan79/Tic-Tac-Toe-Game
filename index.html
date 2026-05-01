@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">    
 </head>
 <body id="body">
     <h1 class="h1body">Tic Tac Toe Game</h1>
+     
     <div class="gamecon" id="game">
         
     <div class="boxgame" id="patner">
-        <h3>Play A patnar and enjoy this game</h3>
-        <button class="me" onclick="start()">start</button>
+        <i class="fa-solid fa-user"></i>
+        <h3>🔥 Play A patnar and enjoy this game</h3>
+        <button class="me" onclick="start()">👥 Play with Partner</button>
     </div>
     <div class="boxgame" id="rebot">
-    <h3>You Can Play  With Robot Enjoy This game</h3>
+        <i class="fa-solid fa-robot"></i>
+    <h3>🔥 You Can Play  With Robot Enjoy This game</h3>
         <button onclick="playerterStart()" class="me">Start with robot</button>
     </div>
     </div>

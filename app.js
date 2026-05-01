@@ -1,9 +1,9 @@
 var body = document.querySelector(".contan")
-console.log(body)
+// console.log(body)
 var gameBtn =document.querySelectorAll(".btn")
 var showWinnwe = document.querySelector("#h1")
 var contanier = document.querySelector(".main")
-console.log(contanier.classList.add("hide"))
+ contanier.classList.add("hide")
 var tern0 =true;
 var check = 0;
 var winingPatern=[
@@ -38,12 +38,12 @@ function start(){
 function get(){
     var player1 = document.getElementById("Player1");
     var player2 = document.getElementById("Player2");
-    console.log(player1.value ,player2.value)
+    // console.log(player1.value ,player2.value)
     if(true ){
         contanier.classList.remove("hide")
         
         document.querySelector(".form").classList = "hide"
-        console.log("show")
+        // console.log("show")
     }else{
         contanier.classList="hide"
     }
@@ -77,14 +77,14 @@ gameBtn.forEach(  (btn) => {
         btn.style.color="#725ac1"
         tern0=false
         check++
-        console.log("che",check)
+        // console.log("che",check)
         btn.disabled=true
     }else{
         btn.innerHTML ="X"
         btn.style.color="#242038"
         tern0=true
         check++
-        console.log("che",check)
+        // console.log("che",check)
         btn.disabled=true
     }
      
@@ -102,7 +102,7 @@ function winner(recev){
         var patern3=gameBtn[patern[2]].innerHTML
         if(patern1 != "" && patern2 !="" && patern3 !="" ){
             if(patern1 === patern2 && patern2 === patern3){
-                console.log("winner" ,recev.innerHTML)
+                // console.log("winner" ,recev.innerHTML)
                 // showWinnwe.innerHTML=` Winner Is ${recev.innerHTML}`
                 //  var winn =` Winner Is ${recev.innerHTML}`
                  showwinneerBg()
@@ -155,7 +155,7 @@ function showwinneerBg(){
     }
 }
 let empty = ["", "","","","","","","",""]
-console.log(empty.length)
+// console.log(empty.length)
 
 function playerterStart(){
     var from =`
@@ -174,11 +174,11 @@ function playerterStart(){
 }
 let RoboCon =document.querySelector("#Robo");
 RoboCon.classList.add("hide")
-console.log(RoboCon)
+// console.log(RoboCon)
 function getRobo(){
     var player1 = document.getElementById("Player1");
     var player2 = document.getElementById("Player2");
-    console.log(player1.value ,player2.value)
+    // console.log(player1.value ,player2.value)
     if(player1.value !== "" ){
         // RoboCon.classList.remove("hide")
         const choce =`<h1 style="text-align:center;">Chouse Mode</h1>  <br/><button class="me" onclick="chose2()">easy</button>  <button class="me" onclick="chose1()">hard</button> `
@@ -207,7 +207,7 @@ function getplayersRobo(p1,p2){
     const player1= p1
     const player2 =p2
     const players=[player1, player2]
-    playerRobo= players
+    playerRobo = players;
 }
 
 let Robobtn=document.querySelectorAll(".g_btn");
@@ -260,7 +260,7 @@ function robot(){
 for(let pattern of winingPatern){
     let [a,b,c] = pattern;
     if(empty[a] && empty[a] === empty[b] && empty[b] === empty[c]){
-      console.log(empty[a] + "winner")
+    //   console.log(empty[a] + "winner")
     //   alert(empty[a] + "winner")
       showwin(empty[a])
       disabled()  
@@ -292,7 +292,7 @@ function reset(){
 
     body.innerHTML=""
     // document.querySelector(".h1body").classList.add("hide")
-    RoboCon.classList.remove("hide")
+    RoboCon.classList.remove("hide")    
 
 }
 function showwin( empty){
@@ -306,7 +306,7 @@ function showwin( empty){
     }else{
         let winn =` Winn Is ${playerRobo[1]} <br/> <button class="me" onclick="startagain()">start</button>  <button class="me" onclick="reset()">Try Again</button> `
                 body.innerHTML=winn
-        console.log(playerRobo[1])
+        // console.log(playerRobo[1])
         RoboCon.classList.add("hide")
         // reset()
     }
@@ -332,7 +332,7 @@ function tran(){
      bord =["","","","","","","","",""]
     // console.log(empty)
     hardbtns.forEach((btn)=>{
-        console.log("khali")
+        // console.log("khali")
         btn.innerHTML ="";
         btn.disabled =false;
 })
@@ -470,7 +470,7 @@ for(var pattern of winingPatern){
     let [a,b,c] = pattern;
     if(bord[a] && bord[a] === bord[b] && bord[b] === bord[c]){
       console.log(bord[a] + "winner")
-      console.log("check winner")
+    //   console.log("check winner")
     //   alert(bord[a]  + ""+ "winner")
       bgwinner(bord[a])
     //   hardcon.classList.add("hide")
@@ -513,15 +513,15 @@ const sets =()=>{
         body.innerHTML=""
         let winn =` Winn Is ${playerRobo[0]} <br/> <button class="me" onclick="startagain()">start</button>  <button class="me" onclick="sets()">Try Again</button>  `
             body.innerHTML=winn
-        console.log(playerRobo[0])
-        console.log(RoboCon.className)
+        // console.log(playerRobo[0])
+        // console.log(RoboCon.className)
         hardcon.classList.add("hide")       
         // sets()
     }else{
         body.innerHTML=""
         let winn =` Winn Is ${playerRobo[1]} <br/> <button class="me" onclick="startagain()">start</button>  <button class="me" onclick="sets()">Try Again</button> `
                 body.innerHTML=winn
-        console.log(playerRobo[1])
+        // console.log(playerRobo[1])
         hardcon.classList.add("hide")
         // sets()
     }
