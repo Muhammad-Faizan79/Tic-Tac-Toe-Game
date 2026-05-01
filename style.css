@@ -3,6 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* padding-top: 20px; */
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(135deg, #EDE9F7,#D6D1F2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h1body{
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.gamecon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxgame{
+    width: 450px;
+    height: 40vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid  #8d86c9;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0,0.1);
+}
+.me{
+    margin: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    font-weight: 700;
+    border: none;
+    background:linear-gradient(135deg, #5F7CFF,#3F5BDB);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+.boxgame button:hover ,.me:hover{
+    background:linear-gradient(135deg, #4A65F0,#2E4AC7);
+}
+.boxgame h3{
+    margin-bottom: 10px;
+    color:#2E4AC7;
+    font-weight: 600;
+}
+
 .main{
     width: 100%;
     height: 100vh;
@@ -15,6 +70,17 @@
 .main h1{
     margin-bottom: 10px;
     color: #6C63FF;
+}
+.div{
+    display: flex;
+    font-size: 10px;
+    gap: 20px;
+    
+}
+.div h1{
+    border: 1px solid  #8d86c9;
+    padding: 8px;
+    border-radius: 5px;
 }
 .container{
     background-color:#ffffff;
@@ -29,6 +95,17 @@
     border-radius: 10px;
     padding: 2px;
     box-shadow: 0 10px 25px rgba(0, 0, 0,0.1);
+}
+.g_btn ,.hg_btn{
+    width: 15vmin;
+    height: 15vmin;
+    font-size: 30px;
+    background-color: #ffffff;
+    color: red;
+    cursor: pointer;
+    border: 1px solid #8d86c9;
+    border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
 }
 .btn{
     width: 15vmin;
@@ -56,10 +133,52 @@
 .button-con button:hover{
     background:linear-gradient(135deg, #4A65F0,#2E4AC7);
 }
+.hide{
+    display: none;
+}
 @media(max-width:786px){
     .btn{
         width: 14vmin;
         height: 14vmin;
     }
     
+}
+.form{
+    height: 350px ;
+    width: 300px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid  #8d86c9;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0,0.1);
+}
+.form input{
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 90%;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+.form button{
+    /* margin: 30px; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    font-weight: 700;
+    border: none;
+    background:linear-gradient(135deg, #5F7CFF,#3F5BDB);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);   
+}
+.form h1{
+    margin-bottom: 10px;
+    color: #6C63FF;
 }

@@ -4,31 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
-<body>
+<body id="body">
+    <h1 class="h1body">Tic Tac Toe Game</h1>
+    <div class="gamecon" id="game">
+        
+    <div class="boxgame" id="patner">
+        <h3>Play A patnar and enjoy this game</h3>
+        <button class="me" onclick="start()">start</button>
+    </div>
+    <div class="boxgame" id="rebot">
+    <h3>You Can Play  With Robot Enjoy This game</h3>
+        <button onclick="playerterStart()" class="me">Start with robot</button>
+    </div>
+    </div>
+    <div class="contan"></div>
+    
+    
 <div class="main">
     <h1>Tic Tac Toe Game</h1>
     <div class="div">
         <h1 id="h1">Show winner</h1>
+        <h1 id="h2">Show winner</h1>
     </div>
     <div class="container">
         
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
-            <button  class="btn" id="g_btn"></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
+            <button  class="btn" ></button>
         
     </div>
     <div class="button-con">
         <button onclick="resartGame()">Resart Game</button>
     </div>
-</div>    
+</div>
+
+
+
+
+
+<div class="main" id="Robo">
+    <h1>Tic Tac Toe Game</h1>
+    <div class="div">
+        <h1 id="h11">Show winner</h1>
+        <h1 id="h22">Show winner</h1>
+    </div>
+    <div class="container" id="con">
+        
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+            <button   class="g_btn"></button>
+        
+    </div>
+    <div class="button-con">
+        <button onclick="reset()">Resart Game</button>
+    </div>
+</div>
+
+
+
+
+    <div class="main" id="Robohard">
+    <h1>Tic Tac Toe Game</h1>
+    <div class="div">
+        <h1 id="h111">Show winner</h1>
+        <h1 id="h222">Show winner</h1>
+    </div>
+    <div class="container" id="con">
+        
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+            <button   class="hg_btn"></button>
+        
+    </div>
+    <div class="button-con">
+        <button onclick="sets()">Resart Game</button>
+    </div>
+</div>
+
+
+
 </body>
 <script src="app.js"></script>
 </html>
