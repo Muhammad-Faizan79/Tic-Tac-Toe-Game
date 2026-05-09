@@ -113,8 +113,8 @@ function winner(recev){
             }
             if(check >= 9){
                 drawGame()
-                showWinnwe.innerHTML=`Game Was Draw `
-
+                body.innerHTML=` Game Was draw <br/> <button class="me"onclick="startagain()">start</button>  <button class="me" onclick="pagain()" > try again </button>`
+                contanier.classList.add("hide");
             }
             
         }
